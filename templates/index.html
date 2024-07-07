@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ theme_id }} - {{ zone_id }}</title>
-    <!-- Подключение Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Стили для выравнивания таблицы по левому краю и фиксированной ширины ячеек */
         .table-fixed {
@@ -18,27 +16,29 @@
             white-space: nowrap; /* Запрет переноса текста */
             overflow: hidden; /* Скрытие текста, выходящего за границы ячейки */
             text-overflow: ellipsis; /* Отображение многоточия для скрытого текста */
+            border: 1px solid #000; /* Для замены стилей Bootstrap */
+            padding: 5px; /* Для замены стилей Bootstrap */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>{{ theme_id }} - {{ zone_id }}</h1>
+        <h1>{{ theme_id }}</h1>
+        {% for zone_data in all_grids %}
+        <h2>{{ zone_data['zone_id'] }}</h2>
         <div class="table-responsive">
-            <table class="table table-bordered table-fixed">
-                {% for row in grid %}
+            <table class="table-fixed">
+                {% for row in zone_data['grid'] %}
                 <tr>
                     {% for cell in row %}
-                    <td class="cell" data-full-content="{{ cell }}" title="{{ cell.split(':')[0] }}">{{ cell.split(':')[0] }}</td>
+                    <td class="cell" data-full-content="{{ cell }}" title="{{ formatCellContent(cell) }}">{{ formatCellContent(cell) }}</td>
                     {% endfor %}
                 </tr>
                 {% endfor %}
             </table>
         </div>
+        {% endfor %}
     </div>
-
-    <!-- Подключение Bootstrap JS (если необходимо использовать JavaScript компоненты Bootstrap) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- JavaScript для изменения стилей ячеек и обработки содержимого -->
     <script>
@@ -63,6 +63,9 @@
                     case 'c':
                         cells[i].style.backgroundColor = '#FF1493'; // Глубокий розовый для 'c'
                         break;
+                    case 'e':
+                        cells[i].style.backgroundColor = '#00FFFF'; // для 'e'
+                        break;
                     default:
                         cells[i].style.backgroundColor = '#FFFFFF'; // Белый цвет для всех остальных случаев
                 }
@@ -74,4 +77,5 @@
         });
     </script>
 </body>
+
 </html>
