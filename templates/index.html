@@ -24,20 +24,35 @@
 <body>
     <div class="container">
         <h1>{{ theme_id }}</h1>
-        {% for zone_data in all_grids %}
-        <h2>{{ zone_data['zone_id'] }}</h2>
-        <div class="table-responsive">
-            <table class="table-fixed">
-                {% for row in zone_data['grid'] %}
-                <tr>
-                    {% for cell in row %}
-                    <td class="cell" data-full-content="{{ cell }}" title="{{ formatCellContent(cell) }}">{{ formatCellContent(cell) }}</td>
-                    {% endfor %}
-                </tr>
+        
+        <!-- Dropdown for selecting theme -->
+        <form id="themeForm">
+            <label for="themeSelect">Select a theme:</label>
+            <select id="themeSelect" name="theme" onchange="this.form.submit()">
+                {% for theme in theme_list %}
+                <option value="{{ theme }}" {% if theme == selected_theme %}selected{% endif %}>{{ theme }}</option>
                 {% endfor %}
-            </table>
+            </select>
+        </form>
+        
+        <div class="zone-container">
+            {% for zone_data in all_grids %}
+            <div class="zone">
+                <h2>{{ zone_data['zone_id'] }}</h2>
+                <div class="table-responsive">
+                    <table class="table-fixed">
+                        {% for row in zone_data['grid'] %}
+                        <tr>
+                            {% for cell in row %}
+                            <td class="cell" data-full-content="{{ cell }}" title="{{ formatCellContent(cell) }}">{{ formatCellContent(cell) }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <!-- JavaScript для изменения стилей ячеек и обработки содержимого -->
@@ -74,8 +89,12 @@
                     this.setAttribute('title', this.getAttribute('data-full-content'));
                 });
             }
+
+            // Handle form submission for theme selection
+            document.getElementById('themeSelect').addEventListener('change', function() {
+                document.getElementById('themeForm').submit();
+            });
         });
     </script>
 </body>
-
 </html>

@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
+import os
 
 app = Flask(__name__)
 
@@ -24,8 +25,17 @@ def formatCellContent(cell):
 
 @app.route('/')
 def home():
-    # Path to the JSON file
-    file_path = 'gamedata/christmas/CombinedGameData.json'
+    # Directory path where themes are located
+    themes_directory = 'gamedata'
+
+    # List all directories in themes_directory
+    theme_list = [name for name in os.listdir(themes_directory) if os.path.isdir(os.path.join(themes_directory, name))]
+
+    # Get selected theme from query parameters or default to 'christmas'
+    selected_theme = request.args.get('theme', 'christmas')
+
+    # Construct file path based on selected theme
+    file_path = f'{themes_directory}/{selected_theme}/CombinedGameData.json'
     
     # Load the JSON data
     data = read_json(file_path)
@@ -58,7 +68,6 @@ def home():
         })
     
     # Render the template with the theme and grid information
-    return render_template('index.html', theme_id=theme_id, all_grids=all_grids, formatCellContent=formatCellContent)
-
+    return render_template('index.html', theme_list=theme_list, selected_theme=selected_theme, theme_id=theme_id, all_grids=all_grids, formatCellContent=formatCellContent)
 if __name__ == "__main__":
     app.run(debug=True)
