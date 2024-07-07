@@ -4,28 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ theme_id }} - {{ zone_id }}</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        table {
-            border-collapse: collapse;
+        /* Стили для выравнивания таблицы по левому краю и фиксированной ширины ячеек */
+        .table-fixed {
+            table-layout: fixed;
         }
-        td {
-            border: 1px solid #000;
-            width: 30px;
-            height: 30px;
+
+        .table-fixed td {
+            width: 30px; /* Ширина ячеек */
             text-align: center;
+            white-space: nowrap; /* Запрет переноса текста */
+            overflow: hidden; /* Скрытие текста, выходящего за границы ячейки */
+            text-overflow: ellipsis; /* Отображение многоточия для скрытого текста */
         }
     </style>
 </head>
 <body>
-    <h1>{{ theme_id }} - {{ zone_id }}</h1>
-    <table>
-        {% for row in grid %}
-        <tr>
-            {% for cell in row %}
-            <td>{{ cell }}</td>
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="container">
+        <h1>{{ theme_id }} - {{ zone_id }}</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-fixed">
+                {% for row in grid %}
+                <tr>
+                    {% for cell in row %}
+                    <td class="cell" data-full-content="{{ cell }}" title="{{ cell.split(':')[0] }}">{{ cell.split(':')[0] }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <!-- Подключение Bootstrap JS (если необходимо использовать JavaScript компоненты Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript для изменения стилей ячеек и обработки содержимого -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cells = document.getElementsByClassName('cell');
+            for (var i = 0; i < cells.length; i++) {
+                var content = cells[i].textContent.trim();
+                cells[i].setAttribute('title', content); // Установка полного содержимого как title
+                switch(content.charAt(0)) {
+                    case 'x':
+                        cells[i].style.backgroundColor = '#808080'; // Серый для 'x'
+                        break;
+                    case 'r':
+                        cells[i].style.backgroundColor = '#FFA500'; // Оранжевый для 'r'
+                        break;
+                    case 's':
+                        cells[i].style.backgroundColor = '#9932CC'; // Фиолетовый для 's'
+                        break;
+                    case 'p':
+                        cells[i].style.backgroundColor = '#00FFFF'; // Бирюзовый для 'p'
+                        break;
+                    case 'c':
+                        cells[i].style.backgroundColor = '#FF1493'; // Глубокий розовый для 'c'
+                        break;
+                    default:
+                        cells[i].style.backgroundColor = '#FFFFFF'; // Белый цвет для всех остальных случаев
+                }
+
+                cells[i].addEventListener('mouseover', function() {
+                    this.setAttribute('title', this.getAttribute('data-full-content'));
+                });
+            }
+        });
+    </script>
 </body>
 </html>

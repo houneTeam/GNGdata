@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 import json
 
 app = Flask(__name__)
@@ -14,31 +14,30 @@ def parse_grid(grid_str, width):
     grid_2d = [grid_elements[i:i + width] for i in range(0, len(grid_elements), width)]
     return grid_2d
 
+# Function to format cell content
+def formatCellContent(cell):
+    content = cell.strip()
+    if ':' in content:
+        parts = content.split(':')
+        return parts[0].strip()  # Return the part before the colon
+    return content
+
 @app.route('/')
 def home():
     # Path to the JSON file
-    file_path = r'gamedata\volcano\CombinedGameData.json'
+    file_path = 'gamedata/volcano/CombinedGameData.json'
     
     # Load the JSON data
     data = read_json(file_path)
     
     # Extract the ThemeId from BalanceProperties
-    try:
-        theme_id = data['BalanceProperties'][0]['ThemeId']
-    except KeyError:
-        theme_id = 'Unknown Theme'
+    theme_id = data.get('BalanceProperties', [{}])[0].get('ThemeId', 'Unknown Theme')
     
     # Extract the first zone
-    try:
-        zone = data['Zones'][0]
-        grid_str = zone['Grid']
-        zone_id = zone['Id']
-        width = zone['WidthCells']
-    except KeyError:
-        zone = {}
-        grid_str = ''
-        zone_id = 'Unknown Zone'
-        width = 7
+    zone = data.get('Zones', [{}])[0]
+    grid_str = zone.get('Grid', '')
+    zone_id = zone.get('Id', 'Unknown Zone')
+    width = zone.get('WidthCells', 7)
     
     # Parse the grid if it exists
     if grid_str:
@@ -47,7 +46,7 @@ def home():
         grid_2d = []
     
     # Render the template with the theme and grid information
-    return render_template('index.html', theme_id=theme_id, zone_id=zone_id, grid=grid_2d)
+    return render_template('index.html', theme_id=theme_id, zone_id=zone_id, grid=grid_2d, formatCellContent=formatCellContent)
 
 if __name__ == "__main__":
     app.run(debug=True)
