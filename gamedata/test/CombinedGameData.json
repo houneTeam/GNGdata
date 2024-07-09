@@ -1,0 +1,14 @@
+{
+    "BalanceProperties": [
+        {
+            "ThemeId": "test"
+        }
+    ],
+    "Zones": [
+        {
+            "Id": "Zone 1",
+            "WidthCells": 7,
+            "Grid": "r:rocksoftcurrencybig:1,x:block1x1v3:1,s:opal:1scg_s09:ca006,x:wall1x1vL:1,r:rockkey:1,r:rockgachawooden:1,r:rockkey:1,r:rockgachawooden:1,x:waterfall1x4vR:1,r:rockgachascripted3:1,x:wall1x1vL:1,s:opal:1scg_s09:ca006,x:wall1x1vR:1,r:rockleaderboardcurrency:1,x:waterfall1x4vR:1,x:waterfall1x4vR:1,r:rockgachawooden:1,r:rockkey:1,s:jade:1scg_s10:ca007,s:opal:1scg_s09:ca006,r:rockgachawooden:1,e:exit:1,s:jade:1scg_s10:ca007,r:rockbasic:1,c:spawningcart:1,r:rockgachawooden:1,r:rockbasic:1,s:topaz:1scg_s08:ca005,e:exit:1,r:rocksoftcurrencysmall:1,c:spawningcart:1,x:block1x1v3:1,r:rocksoftcurrencysmall:1,x:waterfall1x4vR:1,r:rockbasic:1,r:rockgachascripted3:1,r:rockkey:1,s:opal:1scg_s09:ca006,p:checkpoint:1scg_c03,c:spawningcart:1,c:spawningcart:1,s:agate:1GachaIron:ca004,r:rockbasic:1,x:waterfall1x4vR:1,p:checkpoint:1scg_c03,r:rockbasic:1,c:spawningcart:1,r:rocksoftcurrencybig:1,x:block2x2v1:1"
+        }
+    ]
+}

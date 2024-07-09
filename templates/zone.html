@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ theme }} - {{ zone.Id }}</title>
+    <style>
+        .table-fixed {
+            table-layout: fixed;
+        }
+
+        .table-fixed td {
+            width: 30px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ theme }} - {{ zone.Id }}</h1>
+    <div class="table-responsive">
+        <table class="table-fixed">
+            {% for row in grid %}
+            <tr>
+                {% for cell in row %}
+                <td class="cell" data-full-content="{{ cell }}" title="{{ formatCellContent(cell) }}">{{ formatCellContent(cell) }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cells = document.getElementsByClassName('cell');
+            for (var i = 0; i < cells.length; i++) {
+                var content = cells[i].textContent.trim();
+                cells[i].setAttribute('title', content);
+                switch(content.charAt(0)) {
+                    case 'x':
+                        cells[i].style.backgroundColor = '#808080';
+                        break;
+                    case 'r':
+                        cells[i].style.backgroundColor = '#FFA500';
+                        break;
+                    case 's':
+                        cells[i].style.backgroundColor = '#9932CC';
+                        break;
+                    case 'p':
+                        cells[i].style.backgroundColor = '#00FFFF';
+                        break;
+                    case 'c':
+                        cells[i].style.backgroundColor = '#FF1493';
+                        break;
+                    case 'e':
+                        cells[i].style.backgroundColor = '#00FFFF';
+                        break;
+                    default:
+                        cells[i].style.backgroundColor = '#FFFFFF';
+                }
+                cells[i].addEventListener('mouseover', function() {
+                    this.setAttribute('title', this.getAttribute('data-full-content'));
+                });
+            }
+        });
+    </script>
+</body>
+</html>

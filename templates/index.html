@@ -3,98 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ theme_id }} - {{ zone_id }}</title>
-    <style>
-        /* Стили для выравнивания таблицы по левому краю и фиксированной ширины ячеек */
-        .table-fixed {
-            table-layout: fixed;
-        }
-
-        .table-fixed td {
-            width: 30px; /* Ширина ячеек */
-            text-align: center;
-            white-space: nowrap; /* Запрет переноса текста */
-            overflow: hidden; /* Скрытие текста, выходящего за границы ячейки */
-            text-overflow: ellipsis; /* Отображение многоточия для скрытого текста */
-            border: 1px solid #000; /* Для замены стилей Bootstrap */
-            padding: 5px; /* Для замены стилей Bootstrap */
-        }
-    </style>
+    <title>Themes</title>
 </head>
 <body>
-    <div class="container">
-        <h1>{{ theme_id }}</h1>
-        
-        <!-- Dropdown for selecting theme -->
-        <form id="themeForm">
-            <label for="themeSelect">Select a theme:</label>
-            <select id="themeSelect" name="theme" onchange="this.form.submit()">
-                {% for theme in theme_list %}
-                <option value="{{ theme }}" {% if theme == selected_theme %}selected{% endif %}>{{ theme }}</option>
-                {% endfor %}
-            </select>
-        </form>
-        
-        <div class="zone-container">
-            {% for zone_data in all_grids %}
-            <div class="zone">
-                <h2>{{ zone_data['zone_id'] }}</h2>
-                <div class="table-responsive">
-                    <table class="table-fixed">
-                        {% for row in zone_data['grid'] %}
-                        <tr>
-                            {% for cell in row %}
-                            <td class="cell" data-full-content="{{ cell }}" title="{{ formatCellContent(cell) }}">{{ formatCellContent(cell) }}</td>
-                            {% endfor %}
-                        </tr>
-                        {% endfor %}
-                    </table>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-
-    <!-- JavaScript для изменения стилей ячеек и обработки содержимого -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var cells = document.getElementsByClassName('cell');
-            for (var i = 0; i < cells.length; i++) {
-                var content = cells[i].textContent.trim();
-                cells[i].setAttribute('title', content); // Установка полного содержимого как title
-                switch(content.charAt(0)) {
-                    case 'x':
-                        cells[i].style.backgroundColor = '#808080'; // Серый для 'x'
-                        break;
-                    case 'r':
-                        cells[i].style.backgroundColor = '#FFA500'; // Оранжевый для 'r'
-                        break;
-                    case 's':
-                        cells[i].style.backgroundColor = '#9932CC'; // Фиолетовый для 's'
-                        break;
-                    case 'p':
-                        cells[i].style.backgroundColor = '#00FFFF'; // Бирюзовый для 'p'
-                        break;
-                    case 'c':
-                        cells[i].style.backgroundColor = '#FF1493'; // Глубокий розовый для 'c'
-                        break;
-                    case 'e':
-                        cells[i].style.backgroundColor = '#00FFFF'; // для 'e'
-                        break;
-                    default:
-                        cells[i].style.backgroundColor = '#FFFFFF'; // Белый цвет для всех остальных случаев
-                }
-
-                cells[i].addEventListener('mouseover', function() {
-                    this.setAttribute('title', this.getAttribute('data-full-content'));
-                });
-            }
-
-            // Handle form submission for theme selection
-            document.getElementById('themeSelect').addEventListener('change', function() {
-                document.getElementById('themeForm').submit();
-            });
-        });
-    </script>
+    <h1>Themes</h1>
+    <form action="/create_theme" method="post">
+        <input type="text" name="theme_name" placeholder="Enter new theme name">
+        <button type="submit">Create Theme</button>
+    </form>
+    <ul>
+        {% for theme in themes %}
+        <li><a href="{{ url_for('theme', theme=theme) }}">{{ theme }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
