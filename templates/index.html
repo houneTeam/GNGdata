@@ -7,13 +7,13 @@
 </head>
 <body>
     <h1>Themes</h1>
-    <form action="/create_theme" method="post">
+    <form action="{{ url_for('routes.create_new_theme') }}" method="post">
         <input type="text" name="theme_name" placeholder="Enter new theme name" required>
         <button type="submit">Create Theme</button>
     </form>
     <ul>
         {% for theme in themes %}
-        <li><a href="{{ url_for('theme', theme=theme) }}">{{ theme }}</a></li>
+        <li><a href="{{ url_for('routes.theme', theme=theme) }}">{{ theme }}</a></li>
         {% endfor %}
     </ul>
 </body>

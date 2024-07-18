@@ -11,7 +11,7 @@
     <button onclick="convertTheme()">Convert Theme</button>
     <ul>
         {% for zone in data.Zones %}
-        <li><a href="{{ url_for('zone', theme=theme, zone_id=zone.Id) }}">{{ zone.Id }}</a></li>
+        <li><a href="{{ url_for('routes.zone', theme=theme, zone_id=zone.Id) }}">{{ zone.Id }}</a></li>
         {% endfor %}
     </ul>
 

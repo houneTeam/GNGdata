@@ -26,55 +26,55 @@
 </head>
 <body>
     <h1>{{ theme }} - {{ zone.Id }}</h1>
-    <form action="{{ url_for('update_zone_name', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.update_zone_name', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="text" name="new_zone_name" placeholder="Enter new zone name" required>
             <button type="submit">Update Zone Name</button>
         </div>
     </form>
-    <form action="{{ url_for('add_rows_top', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.add_rows_top', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_rows" placeholder="Number of rows to add" required>
             <button type="submit">Add Rows Top</button>
         </div>
     </form>
-    <form action="{{ url_for('add_rows_bottom', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.add_rows_bottom', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_rows" placeholder="Number of rows to add" required>
             <button type="submit">Add Rows Bottom</button>
         </div>
     </form>
-    <form action="{{ url_for('remove_rows_top', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.remove_rows_top', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_rows" placeholder="Number of rows to remove" required>
             <button type="submit">Remove Rows Top</button>
         </div>
     </form>
-    <form action="{{ url_for('remove_rows_bottom', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.remove_rows_bottom', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_rows" placeholder="Number of rows to remove" required>
             <button type="submit">Remove Rows Bottom</button>
         </div>
     </form>
-    <form action="{{ url_for('add_columns_left', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.add_columns_left', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_columns" placeholder="Number of columns to add" required>
             <button type="submit">Add Columns Left</button>
         </div>
     </form>
-    <form action="{{ url_for('add_columns_right', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.add_columns_right', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_columns" placeholder="Number of columns to add" required>
             <button type="submit">Add Columns Right</button>
         </div>
     </form>
-    <form action="{{ url_for('remove_columns_left', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.remove_columns_left', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_columns" placeholder="Number of columns to remove" required>
             <button type="submit">Remove Columns Left</button>
         </div>
     </form>
-    <form action="{{ url_for('remove_columns_right', theme=theme, zone_id=zone.Id) }}" method="post">
+    <form action="{{ url_for('routes.remove_columns_right', theme=theme, zone_id=zone.Id) }}" method="post">
         <div class="form-group">
             <input type="number" name="num_columns" placeholder="Number of columns to remove" required>
             <button type="submit">Remove Columns Right</button>
