@@ -1,8 +1,7 @@
 # routes.py
 import os
 from flask import Blueprint, render_template, request, redirect, url_for, send_from_directory, jsonify
-from utils import read_json, write_json, parse_grid, formatCellContent, create_theme, convert_theme  # Update import
-# No need to import from program.conv anymore
+from utils import read_json, write_json, parse_grid, formatCellContent, create_theme, convert_theme
 
 routes = Blueprint('routes', __name__)
 
@@ -207,7 +206,9 @@ def remove_columns_right(theme, zone_id):
 def convert_theme_route(theme):
     file_path = f'gamedata/{theme}/CombinedGameData.json'
     data = read_json(file_path)
-    output_json = convert_theme(data)  # Update to use convert_theme from utils.py
+    output_json = convert_theme(data)
+    output_file_path = f'gamedata/{theme}/ConvertedGameData.json'
+    write_json(output_file_path, output_json)
     return jsonify(output_json)
 
 @routes.route('/favicon.ico')

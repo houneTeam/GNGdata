@@ -1,0 +1,252 @@
+{
+    "LteWorldModel": {
+        "BalanceId": "2",
+        "WorldType": 1,
+        "ZoneModel": {
+            "Id": "zone1",
+            "Width": 8,
+            "Depth": 20,
+            "CurrentTickNumber": 44,
+            "ReinforcementsLevel": 1,
+            "Grid": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "e",
+                    "Id": "exit",
+                    "Level": 1,
+                    "SecondaryId": "scg_m001_exit"
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block2x2"
+                },
+                null,
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 2
+                },
+                {
+                    "Key": "r",
+                    "Id": "rocksoftcurrencysmall",
+                    "Level": 2
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block1x1v6L"
+                },
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 1
+                },
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 2
+                },
+                {
+                    "Key": "x",
+                    "Id": "block1x2"
+                },
+                {
+                    "Key": "x",
+                    "Id": "block2x3vR"
+                },
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 1
+                },
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 1
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block1x2"
+                },
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 1
+                },
+                {
+                    "Key": "r",
+                    "Id": "rockonboardingmine1",
+                    "Level": 1
+                },
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "waterfall1x4vL"
+                },
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block3x3"
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "c",
+                    "Id": "spawningcart",
+                    "Level": 1
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block1x1v4"
+                },
+                {
+                    "Key": "x",
+                    "Id": "block2x1"
+                },
+                null,
+                {
+                    "Key": "x",
+                    "Id": "block1x1v2"
+                },
+                {
+                    "Key": "x",
+                    "Id": "block1x1v5"
+                },
+                {
+                    "Key": "x",
+                    "Id": "block2x1"
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        }
+    }
+}

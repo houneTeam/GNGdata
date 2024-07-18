@@ -56,7 +56,7 @@ def create_theme(theme_name):
                             "GachaCardsMultRare": 1
                         }
                     ],
-                    "Grid": ".,.,e:exit:1:scg_m001_exit,.,.,.,.,x:block2x2,.,r:rockonboardingmine1:2,r:rocksoftcurrencysmall:2,.,.,.,.,x:block1x1v6L,r:rockonboardingmine1:1,r:rockonboardingmine1:2,x:block1x2,x:block2x3vR,.,.,.,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,.,x:block1x2,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,x:waterfall1x4vL,.,.,.,x:block3x3,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,c:spawningcart:1,.,.,.,.,.,.,.,.,.,.,.,.,x:block1x1v4,x:block2x1,.,x:block1x1v2,x:block1x1v5,x:block2x1,."
+                    "Grid": ".,.,e:exit:1:scg_m001_exit,.,.,.,.,x:block2x2,.,r:rockonboardingmine1:2,r:rocksoftcurrencysmall:2,.,.,.,.,x:block1x1v6L,r:rockonboardingmine1:1,r:rockonboardingmine1:2,x:block1x2,x:block2x3vR,.,.,.,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,.,x:block1x2,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,x:waterfall1x4vL,.,.,.,x:block3x3,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,c:spawningcart:1,.,.,.,.,.,.,.,.,.,.,.,.,x:block1x1v4,x:block2x1,.,x:block1x1v2,x:block1x1v5,x:block2x1,."
                 }
             ]
         }
@@ -103,22 +103,9 @@ def convert_theme(input_data):
                 "Width": zone_data.get("WidthCells", 0),
                 "Depth": zone_data.get("DepthCells", 0),
                 "CurrentTickNumber": 44,
-                "ReinforcementsLevel": zone_data.get("ReinforcementsLevel", 1),  # Add this line
+                "ReinforcementsLevel": zone_data.get("ReinforcementsLevel", 1),
                 "Grid": grid_list
             }
         }
     }
     return output_json
-
-if __name__ == "__main__":
-    input_file_path = input("Enter the input JSON file path: ")
-    with open(input_file_path, "r") as input_file:
-        input_data = json.load(input_file)
-
-    output_json = convert_theme(input_data)
-    
-    output_file_path = "grid_output.json"
-    with open(output_file_path, "w") as output_file:
-        json.dump(output_json, output_file, indent=2)
-
-    print(f"Output saved to {output_file_path}")
