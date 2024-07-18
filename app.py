@@ -1,44 +1,35 @@
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory, jsonify
 import json
 import os
-import shutil
+from program.conv import convert_theme as convert_theme_data  # Import the convert_theme function
 
 app = Flask(__name__)
 
-# Function to read JSON data from a file
 def read_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
-# Function to write JSON data to a file
 def write_json(file_path, data):
     with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-# Function to convert the grid string into a 2D array
 def parse_grid(grid_str, width):
     grid_elements = grid_str.split(',')
     grid_2d = [grid_elements[i:i + width] for i in range(0, len(grid_elements), width)]
     return grid_2d
 
-# Function to format cell content
 def formatCellContent(cell):
     content = cell.strip()
     if ':' in content:
         parts = content.split(':')
-        return parts[0].strip()  # Return the part before the colon
+        return parts[0].strip()
     return content
 
-# Function to create a new theme with one zone and specified parameters
 def create_theme(theme_name):
     themes_directory = 'gamedata'
     new_theme_path = os.path.join(themes_directory, theme_name)
-    
-    # Create the new theme directory if it doesn't exist
     if not os.path.exists(new_theme_path):
         os.makedirs(new_theme_path)
-        
-        # Create the initial data for the theme
         initial_data = {
             "BalanceProperties": [
                 {
@@ -68,14 +59,10 @@ def create_theme(theme_name):
                             "GachaCardsMultRare": 1
                         }
                     ],
-                    "Grid": ".,.,e:exit:1:scg_m001_exit,.,.,.,.,x:block2x2,.,r:rockonboardingmine1:2,r:rocksoftcurrencysmall:2,.,.,.,.,x:block1x1v6L,r:rockonboardingmine1:1,r:rockonboardingmine1:2,x:block1x2,x:block2x3vR,.,.,.,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,.,x:block1x2,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,x:waterfall1x4vL,.,.,.,x:block3x3,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,c:spawningcart:1,.,.,.,.,.,.,.,.,.,.,.,.,x:block1x1v4,x:block2x1,.,x:block1x1v2,x:block1x1v5,x:block2x1,.",
-                    "CrusherGridId": 1,
-                    "GridRowRanks": None
+                    "Grid": ".,.,e:exit:1:scg_m001_exit,.,.,.,.,x:block2x2,.,r:rockonboardingmine1:2,r:rocksoftcurrencysmall:2,.,.,.,.,x:block1x1v6L,r:rockonboardingmine1:1,r:rockonboardingmine1:2,x:block1x2,x:block2x3vR,.,.,.,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,.,x:block1x2,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,x:waterfall1x4vL,.,.,.,x:block3x3,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,c:spawningcart:1,.,.,.,.,.,.,.,.,.,.,.,.,x:block1x1v4,x:block2x1,.,x:block1x1v2,x:block1x1v5,x:block2x1,."
                 }
             ]
         }
-        
-        # Write the initial data to CombinedGameData.json
         file_path = os.path.join(new_theme_path, 'CombinedGameData.json')
         write_json(file_path, initial_data)
 
@@ -122,8 +109,8 @@ def update_zone_name(theme, zone_id):
         write_json(file_path, data)
     return redirect(url_for('zone', theme=theme, zone_id=new_zone_name))
 
-@app.route('/add_rows/<theme>/<zone_id>', methods=['POST'])
-def add_rows(theme, zone_id):
+@app.route('/add_rows_top/<theme>/<zone_id>', methods=['POST'])
+def add_rows_top(theme, zone_id):
     num_rows = int(request.form.get('num_rows'))
     if num_rows > 0:
         file_path = f'gamedata/{theme}/CombinedGameData.json'
@@ -140,8 +127,26 @@ def add_rows(theme, zone_id):
         write_json(file_path, data)
     return redirect(url_for('zone', theme=theme, zone_id=zone_id))
 
-@app.route('/remove_rows/<theme>/<zone_id>', methods=['POST'])
-def remove_rows(theme, zone_id):
+@app.route('/add_rows_bottom/<theme>/<zone_id>', methods=['POST'])
+def add_rows_bottom(theme, zone_id):
+    num_rows = int(request.form.get('num_rows'))
+    if num_rows > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                new_rows = ['.' for _ in range(width * num_rows)]
+                grid_elements = zone["Grid"].split(',')
+                updated_grid = ','.join(grid_elements + new_rows)
+                zone["Grid"] = updated_grid
+                zone["DepthCells"] += num_rows
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/remove_rows_top/<theme>/<zone_id>', methods=['POST'])
+def remove_rows_top(theme, zone_id):
     num_rows = int(request.form.get('num_rows'))
     if num_rows > 0:
         file_path = f'gamedata/{theme}/CombinedGameData.json'
@@ -157,6 +162,113 @@ def remove_rows(theme, zone_id):
                 break
         write_json(file_path, data)
     return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/remove_rows_bottom/<theme>/<zone_id>', methods=['POST'])
+def remove_rows_bottom(theme, zone_id):
+    num_rows = int(request.form.get('num_rows'))
+    if num_rows > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                grid_elements = zone["Grid"].split(',')
+                if len(grid_elements) >= width * num_rows:
+                    updated_grid = grid_elements[:-width * num_rows]
+                    zone["Grid"] = ','.join(updated_grid)
+                    zone["DepthCells"] -= num_rows
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/add_columns_left/<theme>/<zone_id>', methods=['POST'])
+def add_columns_left(theme, zone_id):
+    num_columns = int(request.form.get('num_columns'))
+    if num_columns > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                height = zone["DepthCells"]
+                grid_elements = zone["Grid"].split(',')
+                new_grid = []
+                for i in range(height):
+                    new_grid.extend(['.' for _ in range(num_columns)] + grid_elements[i*width:(i+1)*width])
+                zone["Grid"] = ','.join(new_grid)
+                zone["WidthCells"] += num_columns
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/add_columns_right/<theme>/<zone_id>', methods=['POST'])
+def add_columns_right(theme, zone_id):
+    num_columns = int(request.form.get('num_columns'))
+    if num_columns > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                height = zone["DepthCells"]
+                grid_elements = zone["Grid"].split(',')
+                new_grid = []
+                for i in range(height):
+                    new_grid.extend(grid_elements[i*width:(i+1)*width] + ['.' for _ in range(num_columns)])
+                zone["Grid"] = ','.join(new_grid)
+                zone["WidthCells"] += num_columns
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/remove_columns_left/<theme>/<zone_id>', methods=['POST'])
+def remove_columns_left(theme, zone_id):
+    num_columns = int(request.form.get('num_columns'))
+    if num_columns > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                height = zone["DepthCells"]
+                grid_elements = zone["Grid"].split(',')
+                if width > num_columns:
+                    new_grid = []
+                    for i in range(height):
+                        new_grid.extend(grid_elements[i*width+num_columns:(i+1)*width])
+                    zone["Grid"] = ','.join(new_grid)
+                    zone["WidthCells"] -= num_columns
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/remove_columns_right/<theme>/<zone_id>', methods=['POST'])
+def remove_columns_right(theme, zone_id):
+    num_columns = int(request.form.get('num_columns'))
+    if num_columns > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                height = zone["DepthCells"]
+                grid_elements = zone["Grid"].split(',')
+                if width > num_columns:
+                    new_grid = []
+                    for i in range(height):
+                        new_grid.extend(grid_elements[i*width:(i+1)*width-num_columns])
+                    zone["Grid"] = ','.join(new_grid)
+                    zone["WidthCells"] -= num_columns
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/convert_theme/<theme>', methods=['GET'])
+def convert_theme_route(theme):
+    file_path = f'gamedata/{theme}/CombinedGameData.json'
+    data = read_json(file_path)
+    output_json = convert_theme_data(data)
+    return jsonify(output_json)
 
 @app.route('/favicon.ico')
 def favicon():

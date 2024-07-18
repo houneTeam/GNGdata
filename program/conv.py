@@ -40,7 +40,7 @@ def convert_theme(input_data):
                 "Width": zone_data.get("WidthCells", 0),
                 "Depth": zone_data.get("DepthCells", 0),
                 "CurrentTickNumber": 44,
-                "ReinforcementsLevel": 1,
+                "ReinforcementsLevel": zone_data.get("ReinforcementsLevel", 1),  # Add this line
                 "Grid": grid_list
             }
         }
