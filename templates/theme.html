@@ -7,10 +7,23 @@
 </head>
 <body>
     <h1>{{ theme }}</h1>
+    <button onclick="copyTheme()">Copy Theme</button>
     <ul>
         {% for zone in data.Zones %}
         <li><a href="{{ url_for('zone', theme=theme, zone_id=zone.Id) }}">{{ zone.Id }}</a></li>
         {% endfor %}
     </ul>
+
+    <script>
+        function copyTheme() {
+            const themeData = {{ data|tojson }};
+            const themeString = JSON.stringify(themeData, null, 4);
+            navigator.clipboard.writeText(themeString).then(() => {
+                alert('Theme content copied to clipboard');
+            }).catch(err => {
+                alert('Failed to copy theme content: ', err);
+            });
+        }
+    </script>
 </body>
 </html>

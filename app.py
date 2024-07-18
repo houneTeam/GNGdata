@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 import json
 import os
-import random
+import shutil
 
 app = Flask(__name__)
 
@@ -29,7 +29,7 @@ def formatCellContent(cell):
         return parts[0].strip()  # Return the part before the colon
     return content
 
-# Function to create a new theme
+# Function to create a new theme with one zone and specified parameters
 def create_theme(theme_name):
     themes_directory = 'gamedata'
     new_theme_path = os.path.join(themes_directory, theme_name)
@@ -38,7 +38,7 @@ def create_theme(theme_name):
     if not os.path.exists(new_theme_path):
         os.makedirs(new_theme_path)
         
-        # Create initial CombinedGameData.json with an empty Zone 1
+        # Create the initial data for the theme
         initial_data = {
             "BalanceProperties": [
                 {
@@ -47,9 +47,30 @@ def create_theme(theme_name):
             ],
             "Zones": [
                 {
-                    "Id": "Zone 1",
+                    "Id": "zone1",
                     "WidthCells": 7,
-                    "Grid": generate_grid(7, 7)  # Generate grid for a 7x7 zone
+                    "DepthCells": 12,
+                    "FogOfWarCheckpoint": 0,
+                    "DecoSeed": 0,
+                    "RankMultipliers": [
+                        {
+                            "GenObjectiveSoftCurrencyMultiplier": 1,
+                            "MiningSoftCurrencyMultiplier": 0.1,
+                            "GachaSoftCurrencyMultNormal": 0.35,
+                            "GachaSoftCurrencyMultPremium": 1,
+                            "GachaSoftCurrencyMultRare": 1,
+                            "MiningLeaderboardCurrencyMultiplier": 1,
+                            "GachaLeaderboardCurrencyMultNormal": 1,
+                            "GachaLeaderboardCurrencyMultPremium": 1,
+                            "GachaLeaderboardCurrencyMultRare": 1,
+                            "GachaCardsMultNormal": 0.1,
+                            "GachaCardsMultPremium": 1,
+                            "GachaCardsMultRare": 1
+                        }
+                    ],
+                    "Grid": ".,.,e:exit:1:scg_m001_exit,.,.,.,.,x:block2x2,.,r:rockonboardingmine1:2,r:rocksoftcurrencysmall:2,.,.,.,.,x:block1x1v6L,r:rockonboardingmine1:1,r:rockonboardingmine1:2,x:block1x2,x:block2x3vR,.,.,.,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,.,x:block1x2,r:rockonboardingmine1:1,r:rockonboardingmine1:1,.,.,.,x:waterfall1x4vL,.,.,.,x:block3x3,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,c:spawningcart:1,.,.,.,.,.,.,.,.,.,.,.,.,x:block1x1v4,x:block2x1,.,x:block1x1v2,x:block1x1v5,x:block2x1,.",
+                    "CrusherGridId": 1,
+                    "GridRowRanks": None
                 }
             ]
         }
@@ -57,41 +78,6 @@ def create_theme(theme_name):
         # Write the initial data to CombinedGameData.json
         file_path = os.path.join(new_theme_path, 'CombinedGameData.json')
         write_json(file_path, initial_data)
-
-# Function to generate a grid string with default levels
-def generate_grid(rows, cols):
-    elements = [
-        'e:exit',
-        'x:block1x1v3',
-        'x:block2x2v1',
-        'r:rockleaderboardcurrency',
-        'r:rockbasic',
-        'r:rockgachawooden',
-        'r:rockkey',
-        'r:rocksoftcurrencysmall',
-        'r:rocksoftcurrencybig',
-        'r:rockgachascripted3',
-        'x:waterfall1x4vR',
-        's:jade:scg_s10:ca007',
-        's:opal:scg_s09:ca006',
-        's:topaz:scg_s08:ca005',
-        's:agate:GachaIron:ca004',
-        'p:checkpoint:scg_c03',
-        'c:spawningcart',
-        'x:wall1x1vL',
-        'x:wall1x1vR'
-    ]
-    
-    def add_default_level(element):
-        if ':' in element:
-            parts = element.split(':')
-            if len(parts) == 2:
-                return f"{element}:1"
-            return f"{parts[0]}:{parts[1]}:1" + ':'.join(parts[2:])
-        return element
-    
-    grid = [add_default_level(random.choice(elements)) for _ in range(rows * cols)]
-    return ','.join(grid)
 
 @app.route('/')
 def home():
@@ -122,6 +108,60 @@ def create_new_theme():
     if theme_name:
         create_theme(theme_name)
     return redirect(url_for('home'))
+
+@app.route('/update_zone_name/<theme>/<zone_id>', methods=['POST'])
+def update_zone_name(theme, zone_id):
+    new_zone_name = request.form.get('new_zone_name')
+    if new_zone_name:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                zone["Id"] = new_zone_name
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=new_zone_name))
+
+@app.route('/add_rows/<theme>/<zone_id>', methods=['POST'])
+def add_rows(theme, zone_id):
+    num_rows = int(request.form.get('num_rows'))
+    if num_rows > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                new_rows = ['.' for _ in range(width * num_rows)]
+                grid_elements = zone["Grid"].split(',')
+                updated_grid = ','.join(new_rows + grid_elements)
+                zone["Grid"] = updated_grid
+                zone["DepthCells"] += num_rows
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/remove_rows/<theme>/<zone_id>', methods=['POST'])
+def remove_rows(theme, zone_id):
+    num_rows = int(request.form.get('num_rows'))
+    if num_rows > 0:
+        file_path = f'gamedata/{theme}/CombinedGameData.json'
+        data = read_json(file_path)
+        for zone in data["Zones"]:
+            if zone["Id"] == zone_id:
+                width = zone["WidthCells"]
+                grid_elements = zone["Grid"].split(',')
+                if len(grid_elements) >= width * num_rows:
+                    updated_grid = grid_elements[width * num_rows:]
+                    zone["Grid"] = ','.join(updated_grid)
+                    zone["DepthCells"] -= num_rows
+                break
+        write_json(file_path, data)
+    return redirect(url_for('zone', theme=theme, zone_id=zone_id))
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == '__main__':
     app.run(debug=True)
