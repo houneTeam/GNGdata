@@ -22,12 +22,7 @@ def convert_grid(grid_string):
             grid.append(obj)
     return grid
 
-def main():
-    # Prompt user for input
-    input_string = input("Enter the full JSON string: ")
-
-    # Parse the input string to extract parameters and grid content
-    input_data = json.loads(input_string)
+def convert_theme(input_data):
     balance_id = input_data["BalanceProperties"][0]["ThemeId"]
     zone_data = input_data["Zones"][0]
     grid_string = zone_data["Grid"]
@@ -35,7 +30,7 @@ def main():
     # Convert the grid string to a list of dictionaries
     grid_list = convert_grid(grid_string)
 
-    # Create the output JSON
+    # Create the output JSON with the correct order
     output_json = {
         "LteWorldModel": {
             "BalanceId": balance_id,
@@ -50,13 +45,17 @@ def main():
             }
         }
     }
+    return output_json
 
-    # Write the output JSON to a file
+if __name__ == "__main__":
+    input_file_path = input("Enter the input JSON file path: ")
+    with open(input_file_path, "r") as input_file:
+        input_data = json.load(input_file)
+
+    output_json = convert_theme(input_data)
+    
     output_file_path = "grid_output.json"
     with open(output_file_path, "w") as output_file:
         json.dump(output_json, output_file, indent=2)
 
     print(f"Output saved to {output_file_path}")
-
-if __name__ == "__main__":
-    main()
