@@ -1,6 +1,6 @@
 # GNG Grid Display
 
-![alt text](https://cdn.discordapp.com/attachments/1161307435475148910/1253741774950760498/gob-32.png?ex=668b64c4&is=668a1344&hm=480e786d2a36daf9df1f1a6b48106e97aeb444d6b1ae2e2a708efc33383c568b&)
+![alt text]([https://cdn.discordapp.com/attachments/1161307435475148910/1253741774950760498/gob-32.png?ex=668b64c4&is=668a1344&hm=480e786d2a36daf9df1f1a6b48106e97aeb444d6b1ae2e2a708efc33383c568b&](https://github.com/houneTeam/GNGdata/blob/main/static/gob-32.png))
 
 This project is a Flask web application that displays a grid from a JSON data file. The application reads the JSON file, extracts the relevant theme and zone information, and renders a grid on a web page.
 
