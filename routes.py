@@ -1,4 +1,5 @@
 # routes.py
+import json
 import os
 from flask import Blueprint, render_template, request, redirect, url_for, send_from_directory, jsonify
 from utils import read_json, write_json, parse_grid, formatCellContent, create_theme, convert_theme
@@ -210,6 +211,26 @@ def convert_theme_route(theme):
     output_file_path = f'gamedata/{theme}/ConvertedGameData.json'
     write_json(output_file_path, output_json)
     return jsonify(output_json)
+
+@routes.route('/generate-savedata/<theme>', methods=['GET'])
+def generate_savedata(theme):
+    # Load the converted game data
+    converted_game_data_path = os.path.join('gamedata', theme, 'ConvertedGameData.json')
+    with open(converted_game_data_path, 'r') as file:
+        converted_game_data = json.load(file)
+    
+    # Load the base SaveData.json
+    with open('SaveData.json', 'r') as file:
+        save_data = json.load(file)
+    
+    # Replace the "LteWorldModel" in SaveData.json with the one from ConvertedGameData.json
+    save_data["LteWorldModel"] = converted_game_data["LteWorldModel"]
+
+    # Save the new SaveData.json to the theme directory
+    save_data_output_path = os.path.join('gamedata', theme, 'SaveData.json')
+    write_json(save_data_output_path, save_data)
+    
+    return jsonify(save_data)
 
 @routes.route('/favicon.ico')
 def favicon():

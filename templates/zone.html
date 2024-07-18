@@ -11,6 +11,7 @@
 
         .table-fixed td {
             width: 30px;
+            height: 30px; /* Ensuring the height is also fixed */
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
@@ -120,7 +121,7 @@
             var cells = document.getElementsByClassName('cell');
             for (var i = 0; i < cells.length; i++) {
                 var content = cells[i].textContent.trim();
-                cells[i].setAttribute('title', content);
+                cells[i].setAttribute('title', cells[i].getAttribute('data-full-content'));
                 switch(content.charAt(0)) {
                     case 'x':
                         cells[i].style.backgroundColor = '#808080';

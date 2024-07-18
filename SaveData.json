@@ -1,0 +1,4170 @@
+{
+    "SaveVersion": 1,
+    "EvergreenWorldModel": {
+      "BalanceId": "evergreen",
+      "ZoneModel": {
+        "Id": "zone60",
+        "Width": 7,
+        "Depth": 60,
+        "CurrentTickNumber": 41173718,
+        "ReinforcementsLevel": 1,
+        "Grid": [
+          {
+            "Key": "x",
+            "Id": "block2x1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x2",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "c",
+            "Id": "spawningcart",
+            "Level": 1,
+            "InteractionValue": 8,
+            "State": 1,
+            "InteractionValue2": 9733,
+            "SecondaryLevel": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "d",
+            "Id": "Dynamite",
+            "InteractionValue": 1,
+            "State": 9,
+            "SecondaryId": "18",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "m",
+            "Id": "tinygoblin",
+            "Level": 2,
+            "InteractionValue": 21030867,
+            "SecondaryLevel": -1,
+            "SecondaryId": "",
+            "TertiaryId": "",
+            "TertiaryLevel": -1
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "b",
+            "Id": "tinygoblin",
+            "Level": 1,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "w",
+            "Id": "Soft",
+            "InteractionValue": 120,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "m",
+            "Id": "tinygoblin",
+            "Level": 4,
+            "InteractionValue": 19444739,
+            "SecondaryLevel": -1,
+            "SecondaryId": "",
+            "TertiaryId": "",
+            "TertiaryLevel": -1
+          },
+          {
+            "Key": "w",
+            "Id": "Core",
+            "InteractionValue": 225,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8,
+            "InteractionValue": 41.51909442348511,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vR",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 13,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "w",
+            "Id": "Soft",
+            "InteractionValue": 126,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "m",
+            "Id": "tinygoblin",
+            "Level": 3,
+            "InteractionValue": 20825590,
+            "SecondaryLevel": -1,
+            "SecondaryId": "",
+            "TertiaryId": "",
+            "TertiaryLevel": -1
+          },
+          {
+            "Key": "w",
+            "Id": "Core",
+            "InteractionValue": 225,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 11,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "s",
+            "Id": "amethyst",
+            "Level": 13,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca014",
+            "TertiaryLevel": 10
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 11,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 14,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 14,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "agate",
+            "Level": 16,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca016",
+            "TertiaryLevel": 10
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x2",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 12,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 11,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 12,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 14,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "s",
+            "Id": "topaz",
+            "Level": 19,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca005",
+            "TertiaryLevel": 12
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v5",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v6",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 14,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 16,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 20,
+            "SecondaryId": "GachaForged",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vL",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x2",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "s",
+            "Id": "jade",
+            "Level": 18,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca007",
+            "TertiaryLevel": 12
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "onyx",
+            "Level": 22,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca008",
+            "TertiaryLevel": 12
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 25,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x2",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 27,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "sapphire",
+            "Level": 23,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca009",
+            "TertiaryLevel": 12
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block2x1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 30,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 25,
+            "SecondaryId": "GachaForged",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block2x2",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 25,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "tourmaline",
+            "Level": 21,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca010",
+            "TertiaryLevel": 12
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 30,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 27,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "s",
+            "Id": "aquamarine",
+            "Level": 24,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca023",
+            "TertiaryLevel": 9
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 27,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 29,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v5",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 29,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "emerald",
+            "Level": 26,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca024",
+            "TertiaryLevel": 8
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 30,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 32,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v6",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachasilver",
+            "Level": 32,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 28,
+            "SecondaryId": "GachaForged",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vR",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "diamond",
+            "Level": 20,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca013",
+            "TertiaryLevel": 11
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 29,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 30,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 29,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 32,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v4",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencysmall",
+            "Level": 30,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "s",
+            "Id": "garnet",
+            "Level": 27,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "GachaIron",
+            "TertiaryId": "ca039",
+            "TertiaryLevel": 9
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 31,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 32,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockhardcurrencybig",
+            "Level": 32,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v6",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 33,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 34,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachagolden",
+            "Level": 36,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 34,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachasilver",
+            "Level": 33,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 27,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 35,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 28,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 35,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 26,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 27,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          null,
+          {
+            "Key": "e",
+            "Id": "exit",
+            "Level": 29,
+            "SecondaryId": "GachaCrusher",
+            "TertiaryId": ""
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3",
+            "SecondaryId": "",
+            "TertiaryId": ""
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachasilver",
+            "Level": 33,
+            "SecondaryId": "",
+            "TertiaryId": ""
+          }
+        ],
+        "ClearedCheckPointLevelVals": [],
+        "CoreCurrencyValue": 12352316
+      },
+      "OwnedCardDatas": [
+        {
+          "Id": "ca032",
+          "Quantity": 1,
+          "Level": 1,
+          "IsNew": true
+        },
+        {
+          "Id": "ca051",
+          "Quantity": 1,
+          "Level": 1,
+          "IsNew": true
+        },
+        {
+          "Id": "ca052",
+          "Quantity": 1,
+          "Level": 1,
+          "IsNew": true
+        }
+      ],
+      "DeliveryClaimCount": 1,
+      "DeliveryTimeUtc": "2024-05-28T10:47:34.04Z",
+      "DeliveryClaimCountResetTimeUtc": "2024-05-28T11:47:10.101Z",
+      "DeliveryDupeResetTimeUtc": "2024-05-28T14:47:10.101Z",
+      "ClaimedDeliveryDupeIds": [
+        "20"
+      ],
+      "ClaimedDeliveryDupeCounts": [
+        1
+      ],
+      "RewardCycleDatas": [
+        {
+          "Id": "rockbasic",
+          "Index": 3
+        }
+      ],
+      "FreeGachaDatas": [
+        {
+          "AvailableUtc": "2024-04-13T23:10:57.563Z",
+          "DisplayedGachaId": "GachaWooden",
+          "TranslatedName": "Wooden Chest"
+        },
+        {
+          "Index": 1,
+          "AvailableUtc": "2024-04-14T03:10:57.563Z",
+          "DisplayedGachaId": "GachaWooden",
+          "TranslatedName": "Wooden Chest"
+        }
+      ],
+      "CurrentRankUpBundleId": "BundleRank60",
+      "CurrentRankUpBundleExpiry": "2024-04-17T23:11:14.785Z",
+      "LastSaveTimeStampSeconds": 1721284625,
+      "LteId": "",
+      "FirstPlayedDateUtc": "2024-04-13T23:10:57.321Z",
+      "NumPlayedSessions": 47,
+      "DynamiteDeliveryCompleted": true,
+      "LastLegendaryDrop": "",
+      "ProgressiveOffer": {},
+      "QuestProgress": {},
+      "MultiOffer": {
+        "Id": 4,
+        "Expiry": "2024-04-16T15:11:14.763Z"
+      },
+      "GachaCardsMultiplier": 1,
+      "LteRewardsMultiplier": 1,
+      "Rank": 60,
+      "SoftCurrencyValue": 113,
+      "LastCompletedTutorialTask": 22
+    },
+    "LteWorldModel": {
+      "BalanceId": "jungle",
+      "WorldType": 1,
+      "ZoneModel": {
+        "Id": "zone2",
+        "Width": 7,
+        "Depth": 86,
+        "CurrentTickNumber": 44,
+        "ReinforcementsLevel": 1,
+        "Grid": [
+          {
+            "Key": "x",
+            "Id": "block2x1"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3"
+          },
+          {
+            "Key": "x",
+            "Id": "block1x2"
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "c",
+            "Id": "spawningcart",
+            "Level": 1,
+            "InteractionValue": 4,
+            "InteractionValue2": 44,
+            "SecondaryLevel": 1
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x2"
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 2
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 1
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vR"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 3
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 2
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 3
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachascripted1",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 3
+          },
+          null,
+          {
+            "Key": "s",
+            "Id": "amethyst",
+            "Level": 3,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s01",
+            "TertiaryId": "ca002",
+            "TertiaryLevel": 3
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 3
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 3
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 5
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 3
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 4
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 4
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vL"
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachascripted2",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 4
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 6
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 6
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 6
+          },
+          {
+            "Key": "r",
+            "Id": "rockonboarding",
+            "Level": 5
+          },
+          {
+            "Key": "s",
+            "Id": "citrine",
+            "Level": 7,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s02",
+            "TertiaryId": "ca003",
+            "TertiaryLevel": 4
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 6
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 8
+          },
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 11
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v2"
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 12
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 9
+          },
+          {
+            "Key": "x",
+            "Id": "block1x2"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 11
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vL"
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 11,
+            "SecondaryId": "scg_c01"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "s",
+            "Id": "agate",
+            "Level": 8,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s03",
+            "TertiaryId": "ca004",
+            "TertiaryLevel": 5
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 7
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 8
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 9
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 8
+          },
+          {
+            "Key": "x",
+            "Id": "block1x2"
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 9
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 10
+          },
+          {
+            "Key": "s",
+            "Id": "topaz",
+            "Level": 14,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s04",
+            "TertiaryId": "ca005",
+            "TertiaryLevel": 5
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 13
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 10
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 16
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 12
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 11
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 19
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 11
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 12
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 14
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 15
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 12
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 18
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 12
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v2"
+          },
+          {
+            "Key": "s",
+            "Id": "opal",
+            "Level": 19,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s05",
+            "TertiaryId": "ca006",
+            "TertiaryLevel": 6
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 13
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 21
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 14
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 14
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 22
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 25
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 23
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v3"
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 19
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 24
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL"
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 21,
+            "SecondaryId": "scg_c02"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 19
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 15
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 22
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 23
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 22
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 16
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 23
+          },
+          {
+            "Key": "s",
+            "Id": "jade",
+            "Level": 23,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s06",
+            "TertiaryId": "ca007",
+            "TertiaryLevel": 5
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 21
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 24
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "block1x1v3"
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 25
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 17
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18
+          },
+          null,
+          null,
+          {
+            "Key": "s",
+            "Id": "onyx",
+            "Level": 26,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s07",
+            "TertiaryId": "ca008",
+            "TertiaryLevel": 6
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 18
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v2"
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 19
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 27
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 22
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 24
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 25
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 20
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 30
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22
+          },
+          {
+            "Key": "s",
+            "Id": "sapphire",
+            "Level": 28,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s08",
+            "TertiaryId": "ca009",
+            "TertiaryLevel": 7
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 22
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 21
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 23
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 33
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 26
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL"
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 30,
+            "SecondaryId": "scg_c03"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 24
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 25
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 33
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachascripted3",
+            "Level": 33
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 26
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 27
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 35
+          },
+          {
+            "Key": "s",
+            "Id": "tourmaline",
+            "Level": 29,
+            "InteractionValue2": 0.01,
+            "SecondaryLevel": 1,
+            "SecondaryId": "scg_s09",
+            "TertiaryId": "ca010",
+            "TertiaryLevel": 7
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 27
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 28
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 35
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 28
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 36
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 35
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 30
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 27
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v2"
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 34
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 33
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 36
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 37
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vR"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 29
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 35
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 30
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 37
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachascripted4",
+            "Level": 38
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 37
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 37
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 37
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 30
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 41
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 31
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 36
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachascripted5",
+            "Level": 39
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 38
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 31
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 39
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 33
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 41
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 32
+          },
+          {
+            "Key": "r",
+            "Id": "rockkey",
+            "Level": 42
+          },
+          {
+            "Key": "x",
+            "Id": "wall1x1vL"
+          },
+          {
+            "Key": "p",
+            "Id": "checkpoint",
+            "Level": 38,
+            "SecondaryId": "GachaForged"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "wall1x1vR"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 34
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 42
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 35
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 36
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachawooden",
+            "Level": 43
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 44
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 35
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 43
+          },
+          {
+            "Key": "r",
+            "Id": "rockmasterkey",
+            "Level": 44
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 37
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 45
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 37
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 45
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 36
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 46
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 38
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 46
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 44
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 47
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 47
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 39
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 47
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vL"
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 46
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 39
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 48
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 41
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 40
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 48
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 42
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 42
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v2"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 47
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 41
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 43
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 48
+          },
+          null,
+          {
+            "Key": "x",
+            "Id": "block2x2"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 43
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 44
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 65
+          },
+          null,
+          null,
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 45
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 46
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 64
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 63
+          },
+          {
+            "Key": "x",
+            "Id": "block2x1"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 52
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 48
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 52
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 62
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 56
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 47
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 64
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 60
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 48
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 52
+          },
+          {
+            "Key": "x",
+            "Id": "waterfall1x4vR"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 57
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 53
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v4"
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 47
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 63
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 54
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 48
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachairon",
+            "Level": 51
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockgachaforged",
+            "Level": 55
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 58
+          },
+          {
+            "Key": "x",
+            "Id": "block1x1v1"
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 53
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 55
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 61
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 52
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 50
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 55
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencybig",
+            "Level": 54
+          },
+          {
+            "Key": "x",
+            "Id": "block2x2"
+          },
+          null,
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 53
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 59
+          },
+          {
+            "Key": "r",
+            "Id": "rocksoftcurrencysmall",
+            "Level": 51
+          },
+          {
+            "Key": "r",
+            "Id": "rockbasic",
+            "Level": 49
+          },
+          {
+            "Key": "r",
+            "Id": "rockleaderboardcurrency",
+            "Level": 57
+          },
+          null,
+          null,
+          {
+            "Key": "x",
+            "Id": "end7x1"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "ClearedCheckPointLevelVals": [],
+        "CoreCurrencyValue": 24
+      },
+      "OwnedCardDatas": [],
+      "ClaimedDeliveryDupeIds": [],
+      "ClaimedDeliveryDupeCounts": [],
+      "RewardCycleDatas": [
+        {
+          "Id": "rocksoftcurrencysmall"
+        },
+        {
+          "Id": "rocksoftcurrencybig"
+        },
+        {
+          "Id": "rockhardcurrencysmall"
+        },
+        {
+          "Id": "rockhardcurrencybig"
+        },
+        {
+          "Id": "rockgachawooden"
+        },
+        {
+          "Id": "rockgachairon"
+        },
+        {
+          "Id": "rockgachaforged"
+        },
+        {
+          "Id": "rockgachasilver"
+        },
+        {
+          "Id": "rockgachagolden"
+        },
+        {
+          "Id": "rockgacharoyal"
+        },
+        {
+          "Id": "rockgachamythical"
+        },
+        {
+          "Id": "rockgachalegendary"
+        },
+        {
+          "Id": "rockonboardinggachawoodenmine3"
+        },
+        {
+          "Id": "rockonboardinggachawoodenmine4"
+        },
+        {
+          "Id": "rockonboardinggachaironmine5"
+        },
+        {
+          "Id": "rockonboardinggachaironmine5v2"
+        },
+        {
+          "Id": "rockonboardinggachawoodenmine6"
+        },
+        {
+          "Id": "rockonboardinggachaironmine6"
+        },
+        {
+          "Id": "rockonboardinggachaironmine7"
+        },
+        {
+          "Id": "rockonboardingmine1"
+        },
+        {
+          "Id": "rockonboardingmine2"
+        },
+        {
+          "Id": "rockonboardingmine3"
+        },
+        {
+          "Id": "rockonboardingmine4"
+        },
+        {
+          "Id": "rockonboardingmine5"
+        },
+        {
+          "Id": "rockbasic"
+        },
+        {
+          "Id": "rockkey"
+        },
+        {
+          "Id": "rockmasterkey"
+        },
+        {
+          "Id": "rockleaderboardcurrency"
+        },
+        {
+          "Id": "rockgachascripted1"
+        },
+        {
+          "Id": "rockgachascripted2"
+        },
+        {
+          "Id": "rockgachascripted3"
+        },
+        {
+          "Id": "rockgachascripted4"
+        },
+        {
+          "Id": "rockgachascripted5"
+        },
+        {
+          "Id": "rockonboarding"
+        }
+      ],
+      "FreeGachaDatas": [
+        {
+          "AvailableUtc": "2024-07-18T06:37:05.963Z",
+          "DisplayedGachaId": "GachaWooden",
+          "TranslatedName": "Wooden Chest"
+        },
+        {
+          "Index": 1,
+          "AvailableUtc": "2024-07-18T08:37:05.963Z",
+          "DisplayedGachaId": "GachaWooden",
+          "TranslatedName": "Wooden Chest"
+        }
+      ],
+      "CurrentRankUpBundleId": "",
+      "LastSaveTimeStampSeconds": 1721284634,
+      "LteId": "jungle-event-329",
+      "FirstPlayedDateUtc": "2024-07-18T06:37:05.345Z",
+      "NumPlayedSessions": 1,
+      "LastLegendaryDrop": "",
+      "ProgressiveOffer": {},
+      "QuestProgress": {},
+      "MultiOffer": {},
+      "GachaCardsMultiplier": 1,
+      "LteRewardsMultiplier": 1,
+      "Rank": 1,
+      "LastCompletedTutorialTask": 4
+    },
+    "LastSaveTimeStampSeconds": 1721284634,
+    "LteIntroCompleted": true,
+    "PurchasedNonConsumableBundleIds": [],
+    "DisplayedNoAdsPromo": true,
+    "LeaderboardRegistration": {
+      "Token": "",
+      "Division": "",
+      "LteId": ""
+    },
+    "LteHistory": {},
+    "AchievementStates": [
+      {
+        "Id": 1,
+        "StackIndexToMonitor": 3,
+        "StackCountClaimed": 3,
+        "BestValue": 60
+      },
+      {
+        "Id": 16
+      },
+      {
+        "Id": 8
+      },
+      {
+        "Id": 4
+      },
+      {
+        "Id": 2
+      },
+      {
+        "Id": 6
+      },
+      {
+        "Id": 10
+      }
+    ],
+    "TimezoneOffset": 6,
+    "PurchasedLimitedStoreItems": [],
+    "WeeklyOffer": {
+      "OfferId": "BundleWeekly2",
+      "ExpiryDate": 1715184000,
+      "PurchasesRemaining": 1,
+      "WasPromoted": true
+    },
+    "Flags": {},
+    "TimeSkips": [
+      {
+        "Hours": 1,
+        "Count": 3
+      }
+    ],
+    "LimitedStoreItemPurchased": {},
+    "StatisticsData": {
+      "FirstLoginDate": "2024-04-13T23:10:57.525Z",
+      "CurSessionStartDate": "2024-07-18T06:37:05.958Z",
+      "TotalSecondsPlayed": 722.309,
+      "NumSessions": 79,
+      "FirstVersion": "1.33.0"
+    },
+    "HardCurrencyValue": 97,
+    "NumMinersMerged": 11,
+    "LastViewedLteId": "jungle-event-329"
+  }
