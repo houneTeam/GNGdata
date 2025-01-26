@@ -1,26 +1,26 @@
 import UnityPy
 import os
 
-# Путь к бандлу и выходной папке
+# Path to the bundle and output directory
 bundle_path = "input/translations_bundle"
 output_dir = "localization"
 
-# Убедитесь, что выходная папка существует
+# Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)
 
-# Загружаем бандл
+# Load the bundle
 env = UnityPy.load(bundle_path)
 
-# Проходим через все объекты в бандле
+# Iterate through all objects in the bundle
 for obj in env.objects:
-    # Проверяем, является ли объект текстовым файлом (TextAsset)
+    # Check if the object is a TextAsset
     if obj.type.name == "TextAsset":
         data = obj.read()
-        # Проверяем, заканчивается ли имя файла на .ini
-        if data.name.endswith(".ini"):
-            # Путь для сохранения файла
-            output_path = os.path.join(output_dir, data.name)
-            # Записываем содержимое в файл
-            with open(output_path, 'wb') as f:
-                f.write(data.script)
-            print(f"Файл {data.name} был извлечён и сохранён в {output_path}")
+        # Check if the object's name attribute exists and ends with .ini
+        if hasattr(data, 'm_Name') and data.m_Name.endswith(".ini"):
+            # Define the output path
+            output_path = os.path.join(output_dir, data.m_Name)
+            # Write the content to a file with encoding
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(data.m_Script)
+            print(f"File {data.m_Name} has been extracted and saved to {output_path}")

@@ -17,7 +17,18 @@ def home():
 def theme(theme):
     file_path = f'gamedata/{theme}/CombinedGameData.json'
     data = read_json(file_path)
-    return render_template('theme.html', theme=theme, data=data)
+    crusher_grids = data.get("CrusherGrids", [])
+
+    # Process crusher grids to add an enumerated list of grid elements
+    processed_crusher_grids = []
+    for grid in crusher_grids:
+        enumerated_grid = list(enumerate(grid["Grid"].split(',')))
+        processed_crusher_grids.append({
+            "Id": grid["Id"],
+            "EnumeratedGrid": enumerated_grid
+        })
+
+    return render_template('theme.html', theme=theme, data=data, crusher_grids=processed_crusher_grids)
 
 @routes.route('/<theme>/<zone_id>')
 def zone(theme, zone_id):
